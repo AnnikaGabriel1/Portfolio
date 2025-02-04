@@ -6,7 +6,7 @@ export default [
 		altText: 'Navigate to Projects in Work-Page',
 		iconPath:
 			'M17.7394 3.94843L3.26143 18.4264M17.7394 3.94843L17.7394 18.7977M17.7394 3.94843L2.8902 3.94843',
-		url: '/work.html',
+		url: '/Portfolio/work.html',
 	},
 	{
 		id: 2,
@@ -15,7 +15,7 @@ export default [
 		altText: 'Navigate to About Page',
 		iconPath:
 			'M17.7394 3.94843L3.26143 18.4264M17.7394 3.94843L17.7394 18.7977M17.7394 3.94843L2.8902 3.94843',
-		url: '/about.html',
+		url: '/Portfolio/about.html',
 	},
 	{
 		id: 3,
@@ -24,7 +24,7 @@ export default [
 		altText: 'Navigate to Projects in Work-Page',
 		iconPath:
 			'M17.7394 3.94843L3.26143 18.4264M17.7394 3.94843L17.7394 18.7977M17.7394 3.94843L2.8902 3.94843',
-		url: '/work.html',
+		url: '/Portfolio/work.html',
 	},
 	{
 		id: 4,
@@ -33,6 +33,6 @@ export default [
 		altText: 'Navigate to About-Page',
 		iconPath:
 			'M17.7394 3.94843L3.26143 18.4264M17.7394 3.94843L17.7394 18.7977M17.7394 3.94843L2.8902 3.94843',
-		url: '/about.html',
+		url: '/Portfolio/about.html',
 	},
 ];

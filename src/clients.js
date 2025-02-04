@@ -2,7 +2,7 @@ export default [
 	{
 		id: 1,
 
-		img: '/graphics/RDRGZ_Vector.svg',
+		img: '/Portfolio/graphics/RDRGZ_Vector.svg',
 		alt: 'Logo of RDRGZ Corporate Relations ',
 		url: 'https://rdrgz.com/',
 		target: '_blank',
@@ -14,7 +14,7 @@ export default [
 	{
 		id: 2,
 
-		img: '/graphics/SonyMusic_Vector.svg',
+		img: '/Portfolio/graphics/SonyMusic_Vector.svg',
 		alt: 'Logo of Sony Music',
 		url: 'https://www.sonymusic.com/',
 		target: '_blank',
@@ -25,7 +25,7 @@ export default [
 	{
 		id: 3,
 
-		img: '/graphics/Globetrotter_Vector.svg',
+		img: '/Portfolio/graphics/Globetrotter_Vector.svg',
 		alt: 'Logo of Globetrotter',
 		url: 'https://www.globetrotter.de/',
 		target: '_blank',
@@ -36,7 +36,7 @@ export default [
 	{
 		id: 4,
 
-		img: '/graphics/Hcat-plus_Vector.svg',
+		img: '/Portfolio/graphics/Hcat-plus_Vector.svg',
 		alt: 'Logo of HCAT+',
 		url: 'https://www.hcatplus.de/',
 		target: '_blank',
@@ -47,7 +47,7 @@ export default [
 	{
 		id: 5,
 
-		img: '/graphics/Good-Game_Vector.svg',
+		img: '/Portfolio/graphics/Good-Game_Vector.svg',
 		alt: 'Logo of Goodgame Studios',
 		url: 'https://goodgamestudios.com/de/',
 		target: '_blank',
@@ -58,7 +58,7 @@ export default [
 	{
 		id: 6,
 
-		img: '/graphics/EatSmarter_Vector.svg',
+		img: '/Portfolio/graphics/EatSmarter_Vector.svg',
 		alt: 'Logo of Eat Smarter',
 		url: 'https://eatsmarter.de/',
 		target: '_blank',
@@ -69,7 +69,7 @@ export default [
 	{
 		id: 7,
 
-		img: '/graphics/AdStrat_Vector.svg',
+		img: '/Portfolio/graphics/AdStrat_Vector.svg',
 		alt: 'Logo of AdStrat',
 		url: 'https://www.adstrat.de/',
 		target: '_blank',

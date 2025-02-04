@@ -17,7 +17,7 @@ export default [
 	{
 		id: 2,
 		label: 'Typography/Lettering, Illustration',
-		img: '/images/thumbnail_himmelwasser.webp',
+		img: '/Portfolio/images/thumbnail_himmelwasser.webp',
 		imgAlt: "Lettering of the word 'Himmelwasser. Each letter is a waterdrop",
 		title: 'Himmelwasser',
 		category: ['Typography/Lettering', 'Illustration'],
@@ -27,7 +27,7 @@ export default [
 	{
 		id: 3,
 		label: 'UX, UI, Branding',
-		img: '/images/thumbnail_hcatplus.webp',
+		img: '/Portfolio/images/thumbnail_hcatplus.webp',
 		imgAlt:
 			'Mockup of the campaign-landingpage on a Computer and on a mobile phone',
 		title: 'HCAT+ Outreach Campaign',
@@ -38,7 +38,7 @@ export default [
 	{
 		id: 4,
 		label: 'Typography/Lettering',
-		img: '/images/thumbnail_ratbat.webp',
+		img: '/Portfolio/images/thumbnail_ratbat.webp',
 		imgAlt: 'lettering of the word "ratbat"',
 		title: 'Ratbat',
 		category: ['Typography/Lettering'],
@@ -48,7 +48,7 @@ export default [
 	{
 		id: 5,
 		label: 'UX, UI',
-		img: '/images/thumbnail_rdrgz.webp',
+		img: '/Portfolio/images/thumbnail_rdrgz.webp',
 		imgAlt: 'Mockup of the contact-landingpage on a laptop-screen',
 		title: 'Contact Page',
 		category: ['UX', 'UI'],
@@ -63,7 +63,7 @@ export default [
 	{
 		id: 6,
 		label: 'Graphic',
-		img: '/images/thumbnail_schule-muss-anders.webp',
+		img: '/Portfolio/images/thumbnail_schule-muss-anders.webp',
 		imgAlt:
 			'Two poster mock-ups, which illustrate the political requirements and demonstration information.',
 		title: 'Protest Poster Layout',
@@ -79,7 +79,7 @@ export default [
 	{
 		id: 7,
 		label: 'Graphic, Branding',
-		img: '/images/thumbnail_keltinger.webp',
+		img: '/Portfolio/images/thumbnail_keltinger.webp',
 		imgAlt: 'Logo of the fictional company',
 		title: 'Keltinger Logo Design',
 		category: ['Graphic', 'Branding'],
@@ -89,7 +89,7 @@ export default [
 	{
 		id: 8,
 		label: 'Graphic, Branding',
-		img: '/images/thumbnail_flux.webp',
+		img: '/Portfolio/images/thumbnail_flux.webp',
 		imgAlt: 'Logo of the fictional company',
 		title: 'Flux Logo Design',
 		category: ['Graphic', 'Branding'],
@@ -99,7 +99,7 @@ export default [
 	{
 		id: 9,
 		label: 'Graphic, Branding',
-		img: '/images/thumbnail_coffee-guild.webp',
+		img: '/Portfolio/images/thumbnail_coffee-guild.webp',
 		imgAlt: 'Logo of the fictional company',
 		title: 'Coffee Guild Logo Design',
 		category: ['Graphic', 'Branding'],
@@ -109,7 +109,7 @@ export default [
 	{
 		id: 10,
 		label: 'Graphic, Branding',
-		img: '/images/thumbnail_spread.webp',
+		img: '/Portfolio/images/thumbnail_spread.webp',
 		imgAlt: 'Logo of the fictional company',
 		title: 'Spread Logo Design',
 		category: ['Graphic', 'Branding'],
@@ -119,7 +119,7 @@ export default [
 	{
 		id: 11,
 		label: 'Graphic, Illustration',
-		img: '/images/thumbnail_highlands.webp',
+		img: '/Portfolio/images/thumbnail_highlands.webp',
 		imgAlt: 'Lettering and Illustration of the word "City Highlands"',
 		title: 'City Highlands Poster Design',
 		category: ['Graphic', 'Illustration'],
@@ -127,7 +127,7 @@ export default [
 	{
 		id: 12,
 		label: 'Illustration',
-		img: '/images/thumbnail_drifted-away.webp',
+		img: '/Portfolio/images/thumbnail_drifted-away.webp',
 		imgAlt: 'Lettering and Illustration of the word "City Highlands"',
 		title: 'Drifted Away Photo Manipulation',
 		category: ['Illustration'],
