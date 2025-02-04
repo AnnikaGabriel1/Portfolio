@@ -75,6 +75,10 @@
 	}
 }
 
+.imprint {
+	position: absolute;
+}
+
 @media (--medium) {
 	.contact {
 		height: 100%;
