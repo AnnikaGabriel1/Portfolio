@@ -2,7 +2,7 @@ export default [
 	{
 		id: 1,
 		label: 'Development, Branding, UX, UI, Typography/Lettering',
-		img: '/images/thumbnail_j-jar.webp',
+		img: '/Portfolio/images/thumbnail_j-jar.webp',
 		imgAlt: 'Mockup of a light Music-Sequencer width colorful Pads',
 		title: 'J-JAR Sequencer',
 		category: ['UX', 'UI', 'Branding', 'Typography/Lettering', 'Development'],
