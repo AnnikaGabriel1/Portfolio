@@ -1,0 +1,124 @@
+.mediagrid__2-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-2xl) var(--space-l);
+
+	width: 100%;
+}
+
+.mediagrid__3-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 1/4;
+	gap: var(--space-l);
+
+	width: 100%;
+}
+
+.tile {
+	flex: 1 1 12%;
+	max-width: calc(12% - var(--space-s));
+	min-width: 144px;
+	position: relative;
+	aspect-ratio: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+}
+
+.clients {
+	display: flex;
+	flex-direction: column;
+	margin: var(--space-2xl) var(--space-3xl);
+	justify-content: space-between;
+
+	.client__tilegrid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-l);
+		align-items: flex-start;
+		overflow: hidden;
+
+		.client__tilegrid-tile {
+			flex: 1 1 32%;
+			max-width: calc(32% - var(--space-s));
+			min-width: 144px;
+			position: relative;
+			aspect-ratio: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			border-radius: var(--space-2xs);
+
+			h4 {
+				color: var(--text-color__dark);
+				position: absolute;
+				text-align: center;
+				top: 50%; /* Vertikal zentrieren */
+				left: 50%; /* Horizontal zentrieren */
+				transform: translate(-50%, -50%); /* Exakte Zentrierung */
+			}
+
+			img {
+				width: 100%;
+				border-radius: inherit;
+			}
+		}
+	}
+}
+
+@media (--medium) {
+	.tile {
+		flex: 1 1 20%;
+		max-width: calc(20% - var(--space-s));
+		min-width: 108px;
+	}
+
+	.mediagrid__3-col {
+		display: flex;
+		flex-direction: column;
+	}
+	.mediagrid__2-col {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (--small) {
+	.clients {
+		margin: var(--space-l);
+		align-items: center;
+		.client__tilegrid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			.client__tilegrid-tile {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+	.tile {
+		flex: 1 1 20%;
+		max-width: calc(20% - var(--space-s));
+		min-width: 64px;
+	}
+	.mediagrid__3-col {
+		display: flex;
+		flex-direction: column;
+	}
+	.mediagrid__2-col {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-xl) var(--space-l);
+	}
+}

@@ -1,0 +1,57 @@
+.logo {
+	fill: var(--action-default);
+}
+
+.logo:hover {
+	fill: var(--action-hover);
+	cursor: pointer;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	justify-content: space-between;
+	background: rgba(24, 26, 25, 0.85);
+	backdrop-filter: blur(8px);
+	padding: var(--space-s) var(--space-m);
+	z-index: 1;
+
+	ul {
+		display: flex;
+		gap: var(--space-s);
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			a {
+				text-decoration: none;
+				color: var(--nav-link-color) !important;
+
+				&:visited {
+					text-decoration: none;
+					color: var(
+						--nav-link-color
+					) !important; /* Überschreibt den allgemeinen :visited-Stil */
+				}
+
+				&:hover {
+					color: var(--nav-link-color-hover) !important;
+				}
+
+				&.active-page {
+					color: var(
+						--nav-link-color-active
+					) !important; /* Stil für die aktive Seite */
+				}
+			}
+		}
+	}
+}
+
+@media (--small) {
+	nav {
+		padding: var(--space-xs) var(--space-xs);
+	}
+}

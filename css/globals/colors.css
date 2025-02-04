@@ -1,0 +1,146 @@
+:root {
+	/*  Signalisiere, dass die Seite helle und dunkle Darstellung unterstützt.
+	https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#aa-handling-user-agent-styles */
+	/* 	color-scheme: light dark; */
+
+	/*Colors_________________________________*/
+	/*Primary*/
+	--primary: #ada178;
+	--primary-lighter: #f7efce;
+	--primary-light: #fcf9ee;
+	--primary-darker: #e6c663;
+	--primary-dark: #756638;
+
+	/*Secondary*/
+	--secondary: #78ad85;
+
+	--secondary-light: #94c19d;
+	--secondary-darker: #387545;
+	--secondary-dark: #387545;
+
+	/*Tertiary*/
+	--tertiary: #ad787b;
+	--tertiary-dark: #75383b;
+	--tertiary-light: #c9a3a5;
+
+	/*Quaternary*/
+	--quaternary: #777dad;
+	--quaternary-dark: #383d75;
+	--quaternary-light: #939cc1;
+
+	/*Accent*/
+	--accent: #777dad;
+	--accent-lighter: #939cc1;
+	--accent-light: #a9b4d0;
+	--accent-darker: #696d99;
+	--accent-dark: #575b7c;
+
+	/*Sucess*/
+	--sucess: #6bffb6;
+	--sucess-lighter: #33f596;
+	--sucess-light: #b2ffd8;
+	--sucess-darker: #01b85f;
+	--sucess-dark: #0a5d37;
+
+	/*Error*/
+	--error: #ff7d6c;
+	--error-lighter: #ffaba0;
+	--error-darker: #f8513b;
+	--error-dark: #842418;
+
+	/*Warning*/
+	--warning: #ffeb6b;
+	--warning-lighter: #fff8c2;
+	--warning-darker: #cc8802;
+	--warning-dark: #723e11;
+
+	/*Off-White*/
+	--off-white: #e7e4d7;
+	--off-white-lighter: #f8f7f2;
+	--off-white-darker: #d2ccb5;
+
+	/*Off-Black*/
+	--off-black: #181a19;
+	--off-black-light: #2f3231;
+	--off-black-lightest: #404543;
+
+	/*Variables_________________________________*/
+	/*Backgrounds & Decorative Surfaces*/
+	--body-background: var(--off-black);
+	--background-beige: #ada178;
+	--background-green: #78ad85;
+
+	/*Surfaces*/
+	--secondary-default: var(--secondary);
+	--secondary-highlight: var(--secondary-lighter);
+	--secondary-disabled: var(--secondary-dark);
+	--secondary-hover: var(--secondary-light);
+
+	--accent-default: var(--accent);
+	--accent-highlight: var(--accent-lighter);
+	--accent-disabled: var(--accent-dark);
+	--accent-hover: var(--accent-light);
+
+	--action-default: var(--accent);
+	--action-hover: var(--accent-light);
+
+	--error-default: var(--error-dark);
+	--error-hover: var(--error-darker);
+
+	--sucess-default: var(--sucess-dark);
+	--sucess-hover: var(--sucess-darker);
+
+	--warning-default: var(--warning-dark);
+	--warning-hover: var(--warning-darker);
+
+	--range-item: var(--off-white);
+	--range-background: var(--accent-darker);
+
+	--button-background-color: var(--primary);
+	--button-background-color-hover: var(--primary-dark);
+
+	/*Borders and Dividers*/
+	--primary-border: var(--primary-light);
+	--secondary-border: var(--secondary-light);
+	--accent-border: var(--accent-light);
+	--action-border: var(--primary-light);
+	--error-border: var(--error-lighter);
+	--sucess-border: var(--sucess-light);
+	--warning-border: var(--warning-lighter);
+
+	--divider: var(--off-black-lightest);
+
+	--button-border-color: var(--accent);
+
+	/*Text*/
+	--text-color: var(--primary);
+	--heading-color: var(--primary);
+	--text-color__dark: var(--off-black);
+	--heading-color__dark: var(--off-black);
+	--link-color: var(--accent);
+	--link-color-hover: var(--accent-light);
+	--link-color-active: var(--accent-light);
+	--link-color-visited: var(--secondary-light);
+	--nav-link-color: var(--accent);
+	--nav-link-color-hover: var(--accent-light);
+	--nav-link-color-active: var(--accent-light);
+	--button-color-primary: var(--off-black);
+	--button-color-secondary: var(--off-white-darker);
+	--sucess-color: var(--sucess);
+	--warn-color: var(--warning);
+	--error-color: var(--error);
+
+	@media (prefers-color-scheme: dark) {
+	}
+
+	/*Duo-Tones*/
+	--base: var(--primary);
+	--foreground: var(--off-black);
+}
+
+* {
+	transition:
+		color,
+		background-color,
+		border-color 0.5s ease;
+}

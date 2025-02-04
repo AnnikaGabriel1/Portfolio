@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Tile_x5F_Chess" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <path d="M184,2c7.72,0,14,6.28,14,14v168c0,7.72-6.28,14-14,14H16c-7.72,0-14-6.28-14-14V16C2,8.28,8.28,2,16,2h168M184,0H16C7.16,0,0,7.16,0,16v168c0,8.84,7.16,16,16,16h168c8.84,0,16-7.16,16-16V16C200,7.16,192.84,0,184,0h0Z" style="fill: #ada178;"/>
+  <path d="M24,15.89h13v21h-21v-13c0-4.42,3.58-8,8-8Z" style="fill: #d1ccb5;"/>
+  <rect x="37" y="15.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="58" y="15.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="79" y="15.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="100" y="15.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="121" y="15.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="142" y="15.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <path d="M163,15.89h13c4.42,0,8,3.58,8,8v13h-21V15.89h0Z" style="fill: #ada178;"/>
+  <rect x="16" y="36.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="37" y="36.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="58" y="36.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="79" y="36.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="100" y="36.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="121" y="36.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="142" y="36.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="163" y="36.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="16" y="57.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="37" y="57.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="58" y="57.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="79" y="57.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="100" y="57.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="121" y="57.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="142" y="57.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="163" y="57.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="16" y="78.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="37" y="78.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="58" y="78.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="79" y="78.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="100" y="78.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="121" y="78.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="142" y="78.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="163" y="78.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="16" y="99.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="37" y="99.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="58" y="99.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="79" y="99.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="100" y="99.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="121" y="99.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="142" y="99.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="163" y="99.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="16" y="120.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="37" y="120.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="58" y="120.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="79" y="120.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="100" y="120.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="121" y="120.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="142" y="120.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="163" y="120.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="16" y="141.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="37" y="141.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="58" y="141.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="79" y="141.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="100" y="141.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="121" y="141.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="142" y="141.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="163" y="141.89" width="21" height="21" style="fill: #ada178;"/>
+  <path d="M16,162.89h21v21h-13c-4.42,0-8-3.58-8-8v-13h0Z" style="fill: #ada178;"/>
+  <rect x="37" y="162.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="58" y="162.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="79" y="162.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="100" y="162.89" width="21" height="21" style="fill: #ada178;"/>
+  <rect x="121" y="162.89" width="21" height="21" style="fill: #d1ccb5;"/>
+  <rect x="142" y="162.89" width="21" height="21" style="fill: #ada178;"/>
+  <path d="M163,162.89h21v13c0,4.42-3.58,8-8,8h-13v-21h0Z" style="fill: #d1ccb5;"/>
+</svg>

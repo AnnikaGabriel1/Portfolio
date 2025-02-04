@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g style="isolation: isolate;">
+    <g id="Tile_x5F_Swoosh">
+      <rect x="0" y="0" width="200" height="200" rx="16" ry="16" style="fill: #d1ccb5;"/>
+      <path d="M95.98,108.05c-19.21-9.63-39.69-11.39-60.71-8.53-.98.13-1.54-1.11-.78-1.75,18.33-15.43,46.15-16.83,67.44-6.78,18.31,10.6,43.82,11.54,62.38,9.89.98-.09,1.48,1.15.72,1.77-19,15.6-47.46,16.34-69.05,5.4Z" style="fill: #777dad; mix-blend-mode: multiply;"/>
+    </g>
+  </g>
+</svg>

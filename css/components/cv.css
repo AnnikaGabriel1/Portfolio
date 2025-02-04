@@ -1,0 +1,33 @@
+.cv__media {
+	display: grid;
+	grid-column: 2/4;
+
+	img {
+		width: 100%;
+	}
+}
+
+.cv__text {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1;
+	position: sticky;
+	top: var(--space-2xl);
+}
+
+@media (--medium) {
+	.cv__media {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (--small) {
+	.cv__text {
+		position: static;
+	}
+	.cv__media {
+		display: flex;
+		flex-direction: column;
+	}
+}

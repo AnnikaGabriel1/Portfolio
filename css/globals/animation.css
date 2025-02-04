@@ -1,0 +1,8 @@
+:root {
+	/*Hover_________________________________*/
+	/*Easings*/
+	--ease-out-back-duration-1: 0.6s;
+	--ease-out-back-timing-1: cubic-bezier(0.25, 1, 0.5, 1);
+
+	--ease-out-back-duration-2: 1s;
+}

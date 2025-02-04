@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#181a19" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3-1" x="44.08" y="40.08" width="115.17" height="115.17" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4"/>
+      <feGaussianBlur result="blur-2" stdDeviation="0"/>
+      <feFlood flood-color="#181a19" flood-opacity="1"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" x="102.99" y="124" width="46.01" height="47.01" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="3"/>
+      <feGaussianBlur result="blur-3" stdDeviation="0"/>
+      <feFlood flood-color="#181a19" flood-opacity="1"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" x="24.53" y="36.03" width="49.58" height="50.58" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="3"/>
+      <feGaussianBlur result="blur-4" stdDeviation="0"/>
+      <feFlood flood-color="#181a19" flood-opacity="1"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-6" x="123" y="96" width="46.81" height="47.81" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="3"/>
+      <feGaussianBlur result="blur-5" stdDeviation="0"/>
+      <feFlood flood-color="#181a19" flood-opacity="1"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="isolation: isolate;">
+    <g id="Illustration_x5F_Branding">
+      <rect width="200" height="200" style="fill: #ad787b;"/>
+      <g>
+        <rect x="52.33" y="48.33" width="94.67" height="94.67" rx="5" ry="5" transform="translate(-18.54 24.16) rotate(-12.66)" style="fill: #e7e4d7; filter: url(#drop-shadow-3-1);"/>
+        <path d="M127.68,47.43c-.29,0-.59.03-.88.1l-72.25,16.22c-1.86.42-3.12,2.07-3.12,3.9,0,.29.03.58.1.88l16.22,72.25c.42,1.86,2.07,3.12,3.9,3.12.29,0,.59-.03.88-.1l72.25-16.22c1.86-.42,3.12-2.07,3.12-3.9,0-.29-.03-.58-.1-.88l-16.22-72.25c-.42-1.86-2.07-3.12-3.9-3.12" style="fill: #d1ccb5;"/>
+      </g>
+      <g>
+        <rect x="104.99" y="126.01" width="40" height="40" rx="4" ry="4" transform="translate(20.76 -15.48) rotate(7.73)" style="fill: #ada178; filter: url(#drop-shadow-4);"/>
+        <path d="M144.27,152.66l-18.01,13.7,11.89,1.61c2.19.3,4.2-1.24,4.5-3.43l1.61-11.89Z" style="fill: #e7e4d7;"/>
+      </g>
+      <g>
+        <rect x="28.32" y="39.82" width="40" height="40" rx="4" ry="4" transform="translate(18.35 -11) rotate(15.99)" style="fill: #e7e4d7; filter: url(#drop-shadow-5);"/>
+        <path d="M46.27,55.6h0s.09,0,.14.02l13.46,3.86c.13.04.23.12.3.24.06.12.08.25.04.38l-3.86,13.46c-.06.21-.26.36-.48.36-.05,0-.09,0-.14-.02l-13.46-3.86c-.13-.04-.23-.12-.3-.24-.06-.12-.08-.25-.04-.38l3.86-13.46c.06-.21.26-.36.48-.36M46.27,55.1c-.43,0-.84.29-.96.72l-3.86,13.46c-.15.53.15,1.08.69,1.24l13.46,3.86c.09.03.18.04.28.04.43,0,.84-.29.96-.72l3.86-13.46c.15-.53-.15-1.08-.69-1.24l-13.46-3.86c-.09-.03-.18-.04-.28-.04h0Z" style="fill: #ad787b;"/>
+        <rect x="37.58" y="46.87" width="16" height="16" rx="1" ry="1" transform="translate(16.88 -10.43) rotate(15.99)" style="fill: #78ad85;"/>
+      </g>
+      <g>
+        <rect x="125.41" y="98.41" width="40" height="40" rx="4" ry="4" transform="translate(21.36 -22.22) rotate(9.43)" style="fill: #e7e4d7; filter: url(#drop-shadow-6);"/>
+        <path d="M143.44,130.24l-3.95-.66.33-1.97c.06-.36.4-.61.77-.55l1.32.22c.36.06.71-.19.77-.55l2.84-17.1c.06-.36-.19-.71-.55-.77l-3.95-.66c-.36-.06-.71.19-.77.55l-.22,1.32c-.06.36-.4.61-.77.55l-1.32-.22c-.36-.06-.61-.4-.55-.77l.55-3.29c.12-.73.81-1.22,1.53-1.1l7.89,1.31,7.89,1.31c.73.12,1.22.81,1.1,1.53l-.55,3.29c-.06.36-.4.61-.77.55l-1.32-.22c-.36-.06-.61-.4-.55-.77l.22-1.32c.06-.36-.19-.71-.55-.77l-3.95-.66c-.36-.06-.71.19-.77.55l-2.84,17.1c-.06.36.19.71.55.77l1.32.22c.36.06.61.4.55.77l-.33,1.97-3.95-.66Z" style="fill: #777dad; mix-blend-mode: multiply;"/>
+      </g>
+    </g>
+  </g>
+</svg>

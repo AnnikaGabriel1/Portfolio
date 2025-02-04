@@ -1,0 +1,117 @@
+.landing {
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	padding: 70px var(--space-3xl) var(--space-2xl) var(--space-3xl);
+	justify-content: space-between;
+	overflow: auto;
+	gap: var(--space-l);
+
+	.landing__tilegrid {
+		display: flex;
+		gap: var(--space-s);
+		align-items: flex-start;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.landing-sub__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: var(--space-l);
+		align-items: end;
+
+		h1 {
+			border: 2px solid var(--primary);
+			border-radius: var(--space-l) var(--space-l) var(--space-l) 0;
+			padding: var(--space-s) var(--space-l);
+			grid-column: 1 / 3;
+		}
+
+		.landing-sub__text {
+			background-color: var(--background-beige);
+			border-radius: var(--space-l) var(--space-l) var(--space-l) 0;
+			padding: var(--space-l);
+			display: flex;
+			flex-direction: column;
+			gap: var(--space-l);
+			justify-content: flex-end;
+			grid-column: 3;
+			text-align: left;
+			color: var(--text-color__dark);
+			h2 {
+				color: var(--primary-dark);
+			}
+		}
+	}
+
+	.landing-main__content {
+		background-color: var(--background-beige);
+		border-radius: var(--space-l) var(--space-l) var(--space-l) 0;
+		width: 100%;
+		padding: var(--space-s) var(--space-l);
+		h1 {
+			color: var(--primary-dark);
+
+			text-shadow: none;
+		}
+	}
+}
+
+@media (--medium) {
+	.landing {
+		height: 100%;
+		.landing__tilegrid {
+			gap: var(--space-xs);
+		}
+		.landing-sub__content {
+			grid-template-columns: 1fr;
+			h1 {
+				grid-column: 1;
+			}
+			.landing-sub__text {
+				grid-column: 1;
+				text-align: center;
+				align-items: center;
+			}
+		}
+
+		.landing-main__content {
+			width: 100%;
+		}
+	}
+}
+
+@media (--small) {
+	.landing {
+		height: 100%;
+		align-items: center;
+		padding: 60px var(--space-l);
+
+		.landing__tilegrid {
+			gap: var(--space-2xs);
+		}
+
+		.landing-sub__content {
+			grid-template-columns: 1fr;
+			gap: var(--space-l);
+			h1 {
+				grid-column: 1;
+			}
+			.landing-sub__text {
+				grid-column: 1;
+				text-align: center;
+				align-items: center;
+				padding: var(--space-l);
+			}
+		}
+
+		.landing-main__content {
+			width: 100%;
+			align-items: center;
+			img {
+				width: auto;
+			}
+		}
+	}
+}

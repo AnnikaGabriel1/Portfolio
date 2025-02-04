@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g style="isolation: isolate;">
+    <g id="Tile_x5F_Array">
+      <rect width="200" height="200" rx="16" ry="16" style="fill: #ad787b;"/>
+      <g style="mix-blend-mode: multiply;">
+        <polyline points="82 64 64 64 64 136 82 136" style="fill: none; stroke: #ad787b; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 2px;"/>
+      </g>
+      <g style="mix-blend-mode: multiply;">
+        <polyline points="118 136 136 136 136 64 118 64" style="fill: none; stroke: #ad787b; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 2px;"/>
+      </g>
+    </g>
+  </g>
+</svg>
