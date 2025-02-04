@@ -81,6 +81,26 @@
 	justify-content: end;
 	height: 100%;
 	align-items: end;
+
+	h1 {
+		margin-bottom: var(--space-l);
+	}
+}
+
+.imprint__container {
+	margin: var(--space-3xl);
+	h1 {
+		margin-bottom: var(--space-2xl);
+	}
+	h2 {
+		margin-bottom: var(--space-2xs);
+	}
+	p {
+		margin-bottom: var(--space-xl);
+	}
+	h3 {
+		margin-bottom: var(--space-2xs);
+	}
 }
 
 @media (--medium) {
