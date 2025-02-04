@@ -13,6 +13,7 @@ export default defineConfig({
 				about: 'about.html',
 				work: 'work.html',
 				cases: 'case-studies.html',
+				imprint: 'imprint.html',
 			},
 		},
 	},

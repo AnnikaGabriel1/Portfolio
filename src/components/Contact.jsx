@@ -72,6 +72,13 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 					</div>
 				</div>
 			</div>
+
+			<a
+				href="https://annikagabriel1.github.io/Portfolio/imprint"
+				aria-label="Click to open Imprint"
+			>
+				Imprint
+			</a>
 		</div>
 	);
 }
