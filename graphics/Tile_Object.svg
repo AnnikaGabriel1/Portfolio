@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g style="isolation: isolate;">
+    <g id="Tile_x5F_Object">
+      <rect x="0" width="200" height="200" rx="16" ry="16" style="fill: #ada178;"/>
+      <g style="mix-blend-mode: multiply;">
+        <path d="M82,64h0c-18,0-2,36-18,36,16,0,0,36,18,36h0" style="fill: none; stroke: #ada178; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+      </g>
+      <g style="mix-blend-mode: multiply;">
+        <path d="M118,136h0c18,0,2-36,18-36-16,0,0-36-18-36h0" style="fill: none; stroke: #ada178; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+      </g>
+    </g>
+  </g>
+</svg>
