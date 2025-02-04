@@ -14,8 +14,8 @@ https://www.stefanjudis.com/notes/can-we-have-custom-media-queries-please/
 /* Hier werden drei Bereiche im Layout mit der neuen (breit unterstützten)
 Syntax mit logischen Operatoren statt min-width und max-width definiert. */
 @custom-media --large (width >= 80rem);
-@custom-media --big (65rem < width < 80rem);
-@custom-media --medium (44rem < width < 65rem);
+@custom-media --big (75rem < width < 80rem);
+@custom-media --medium (44rem < width < 75rem);
 @custom-media --small (width <= 44rem);
 /* Bis bzw. abb mittlere Größe: */
 @custom-media --small-medium (width <= 50rem);

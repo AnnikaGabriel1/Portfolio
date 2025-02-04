@@ -89,6 +89,7 @@
 		padding: 60px var(--space-l);
 
 		.landing__tilegrid {
+			justify-content: center;
 			gap: var(--space-2xs);
 		}
 

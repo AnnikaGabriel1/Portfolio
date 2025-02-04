@@ -5,9 +5,6 @@
 	width: 100%;
 	border-radius: var(--space-xs) var(--space-xs) var(--space-xs) 0;
 	gap: var(--space-m);
-	p {
-		font-weight: 300;
-	}
 
 	.card__info {
 		display: flex;
@@ -42,9 +39,6 @@
 .card__color--red {
 	color: var(--text-color__dark);
 	background-color: var(--tertiary);
-	p {
-		font-weight: 400;
-	}
 }
 
 .card__stroke--red {

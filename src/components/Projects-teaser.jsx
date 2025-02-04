@@ -10,7 +10,7 @@ export default function ProjectTeaser({ style, title }) {
 	);
 	return (
 		<section className="section card__info--blue" style={style}>
-			<div>
+			<div className="section__intro">
 				<h2>{title}</h2>
 			</div>
 
