@@ -12,7 +12,7 @@ export default function Nav() {
 	}, []);
 	return (
 		<>
-			<a href="/index.html" aria-label="Home">
+			<a href="/Portfolio/index.html" aria-label="Home">
 				<svg
 					width="97"
 					height="24"
@@ -41,17 +41,17 @@ export default function Nav() {
 			</a>
 			<ul>
 				<li>
-					<a href="/index.html" aria-label="Home">
+					<a href="/Portfolio/index.html" aria-label="Home">
 						Home
 					</a>
 				</li>
 				<li>
-					<a href="/about.html" aria-label="About">
+					<a href="/Portfolio/about.html" aria-label="About">
 						About
 					</a>
 				</li>
 				<li>
-					<a href="/work.html" aria-label="Work">
+					<a href="/Portfolio/work.html" aria-label="Work">
 						Work
 					</a>
 				</li>
