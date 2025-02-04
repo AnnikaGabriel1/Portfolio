@@ -76,7 +76,11 @@
 }
 
 .imprint {
-	position: absolute;
+	grid-column: 3/4;
+	display: flex;
+	justify-content: end;
+	height: 100%;
+	align-items: end;
 }
 
 @media (--medium) {

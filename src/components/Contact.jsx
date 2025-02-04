@@ -71,14 +71,14 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 						</a>
 					</div>
 				</div>
-			</div>
-			<div className="imprint">
-				<a
-					href="https://annikagabriel1.github.io/Portfolio/imprint"
-					aria-label="Click to open Imprint"
-				>
-					Imprint
-				</a>
+				<div className="imprint">
+					<a
+						href="https://annikagabriel1.github.io/Portfolio/imprint"
+						aria-label="Click to open Imprint"
+					>
+						Imprint
+					</a>
+				</div>
 			</div>
 		</div>
 	);
