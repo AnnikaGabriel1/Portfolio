@@ -46,7 +46,10 @@ export default function Nav() {
 					</a>
 				</li>
 				<li>
-					<a href="/Portfolio/about.html" aria-label="About">
+					<a
+						href="https://annikagabriel1.github.io/Portfolio/about"
+						aria-label="About"
+					>
 						About
 					</a>
 				</li>
