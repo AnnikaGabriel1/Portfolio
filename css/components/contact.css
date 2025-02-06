@@ -84,6 +84,7 @@
 
 .imprint__container {
 	margin: var(--space-3xl);
+	color: var(--off-black);
 	h1 {
 		margin-bottom: var(--space-2xl);
 	}
