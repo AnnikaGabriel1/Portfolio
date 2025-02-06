@@ -41,7 +41,7 @@ nav {
 				}
 
 				&.active-page {
-					color: var(--primary) !important; /* Stil für die aktive Seite */
+					color: var(--primary-dark) !important; /* Stil für die aktive Seite */
 				}
 			}
 		}
