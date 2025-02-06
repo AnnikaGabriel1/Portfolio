@@ -25,12 +25,12 @@ export default function Projects() {
 					onFilterChange={(filteredItems) => setFilteredProjects(filteredItems)}
 				/>
 			</div>
-			<div className="projects__media card__info--blue">
+			<div className="projects__media">
 				<MediaGrid
 					items={filteredProjects}
 					cardClassName="card--centered"
 					className="mediagrid__2-col"
-					cardInfo="card__info card__stroke--blue"
+					cardInfo="card__info card__info--blue"
 				/>
 			</div>
 		</section>

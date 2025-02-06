@@ -1,57 +1,58 @@
 .cta {
 	display: flex;
-	flex-direction: column;
+	width: 100%;
 	gap: var(--space-s);
-	grid-column: 1fr;
 }
 
 .cta--right {
-	grid-column: 3/4;
 	display: flex;
-	height: 100%;
-	flex-direction: column;
-	justify-content: end;
+	width: 100%;
+	grid-column: 1/7;
 	gap: var(--space-s);
-	grid-column: 1fr;
 }
 
 .cta__text--blue {
-	justify-content: end;
-	align-items: start;
-	color: var(--quaternary);
 	display: flex;
-	flex-direction: column;
+	width: 100%;
+	justify-content: space-between;
+	border: solid 2px var(--quaternary);
+	align-items: center;
+	color: var(--quaternary-dark);
 	gap: var(--space-s);
+	border-radius: var(--space-xs);
+	padding: var(--space-l);
 	button {
-		background-color: var(--quaternary);
+		background-color: var(--quaternary-light);
 	}
 }
 
 .cta__text--red {
-	justify-content: end;
-	align-items: start;
-	color: var(--tertiary-dark);
 	display: flex;
-	flex-direction: column;
+	width: 100%;
+	justify-content: space-between;
+	border: solid 2px var(--tertiary);
+	align-items: center;
+	color: var(--tertiary-dark);
 	gap: var(--space-s);
+	border-radius: var(--space-xs);
+	padding: var(--space-l);
 	button {
-		background-color: var(--tertiary-dark);
-		color: var(--tertiary-light);
-	}
-	.icon__cta {
-		color: var(--tertiary-light);
+		background-color: var(--tertiary-light);
 	}
 }
 
 .cta__text--green {
+	border: solid 2px var(--secondary);
+	width: 100%;
 	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: start;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: var(--space-xs);
+	padding: var(--space-l);
 	gap: var(--space-s);
-	color: var(--secondary);
+	color: var(--secondary-dark);
 	button {
-		background-color: var(--secondary);
+		background-color: var(--secondary-light);
 		color: var(--off-black);
 	}
 	.icon__cta {
@@ -87,12 +88,15 @@
 		width: 100%;
 	}
 	.cta__text--green {
+		padding: var(--space-s);
 		align-items: center;
 	}
 	.cta__text--blue {
 		align-items: center;
+		padding: var(--space-s);
 	}
 	.cta__text--red {
 		align-items: center;
+		padding: var(--space-s);
 	}
 }

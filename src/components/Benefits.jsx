@@ -3,8 +3,8 @@ import cta from '../cta.js';
 
 export default function Benefits({ style }) {
 	return (
-		<section className="section section__intro--red" style={style}>
-			<div className="section__intro">
+		<section className="section" style={style}>
+			<div className="section__intro section__intro--red">
 				<h2>Benefits</h2>
 			</div>
 			<div className="mediagrid__3-col">

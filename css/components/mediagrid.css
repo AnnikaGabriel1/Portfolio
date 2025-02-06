@@ -1,16 +1,15 @@
 .mediagrid__2-col {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: var(--space-2xl) var(--space-l);
-
-	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: var(--space-xl) var(--space-s);
+	margin: 0 var(--space-xl) var(--space-xl) var(--space-xl);
 }
 
 .mediagrid__3-col {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column: 1/4;
-	gap: var(--space-l);
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column: 1/7;
+	gap: var(--space-s);
 
 	width: 100%;
 }
@@ -36,20 +35,19 @@
 .clients {
 	display: flex;
 	flex-direction: column;
-	margin: var(--space-2xl) var(--space-3xl);
+	margin: var(--space-xl);
 	justify-content: space-between;
 
 	.client__tilegrid {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 		flex-wrap: wrap;
-		gap: var(--space-l);
+		gap: var(--space-s);
 		align-items: flex-start;
 		overflow: hidden;
 
 		.client__tilegrid-tile {
-			flex: 1 1 32%;
-			max-width: calc(32% - var(--space-s));
-			min-width: 144px;
+			grid-column: 1fr;
 			position: relative;
 			aspect-ratio: 1;
 			display: flex;
@@ -75,32 +73,26 @@
 }
 
 @media (--medium) {
+	.client__tilegrid-tile {
+		grid-column: 2 span;
+	}
 	.tile {
 		flex: 1 1 20%;
 		max-width: calc(20% - var(--space-s));
 		min-width: 108px;
 	}
-
-	.mediagrid__3-col {
-		display: flex;
-		flex-direction: column;
-	}
-	.mediagrid__2-col {
-		display: flex;
-		flex-direction: column;
-	}
 }
 
 @media (--small) {
 	.clients {
-		margin: var(--space-l);
-		align-items: center;
+		margin: var(--space-s);
+
 		.client__tilegrid {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			flex-direction: column;
-			align-items: center;
 			width: 100%;
+
 			.client__tilegrid-tile {
 				width: 100%;
 				max-width: 100%;
@@ -119,6 +111,7 @@
 	.mediagrid__2-col {
 		display: flex;
 		flex-direction: column;
+		margin: var(--space-s);
 		gap: var(--space-xl) var(--space-l);
 	}
 }

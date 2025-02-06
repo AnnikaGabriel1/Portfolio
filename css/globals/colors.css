@@ -7,7 +7,7 @@
 	/*Primary*/
 	--primary: #ada178;
 	--primary-lighter: #f7efce;
-	--primary-light: #fcf9ee;
+	--primary-light: #b9b18b;
 	--primary-darker: #e6c663;
 	--primary-dark: #756638;
 
@@ -119,8 +119,8 @@
 	--heading-color__dark: var(--off-black);
 	--link-color: var(--accent);
 	--link-color-hover: var(--accent-light);
-	--link-color-active: var(--accent-light);
-	--link-color-visited: var(--secondary-light);
+	--link-color-active: var(--off-black);
+	--link-color-visited: var(--off-black);
 	--nav-link-color: var(--accent);
 	--nav-link-color-hover: var(--accent-light);
 	--nav-link-color-active: var(--accent-light);

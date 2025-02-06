@@ -6,11 +6,13 @@ export default function CV() {
 		<section className="section">
 			<div className="intro__secondary">
 				<h2>CV</h2>
-				<h6>
-					Every step of my career has shaped my skills and perspective. My CV
-					reflects a journey of continuous learning, innovation and a passion
-					for creating impactful solutions.
-				</h6>
+				<div className="intro__secondary_info">
+					<p>
+						Every step of my career has shaped my skills and perspective. My CV
+						reflects a journey of continuous learning, innovation and a passion
+						for creating impactful solutions.
+					</p>
+				</div>
 			</div>
 
 			<MediaGrid

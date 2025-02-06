@@ -52,7 +52,7 @@ input[type='submit'] {
 	width: auto;
 	align-items: baseline;
 	gap: var(--space-xs);
-	color: var(--button-color-secondary);
+	color: var(--button-color-primary);
 	transition: all var(--ease-out-back-duration-2) var(--ease-out-back-timing-1);
 
 	&:hover {
@@ -63,12 +63,13 @@ input[type='submit'] {
 
 .filter__buttons--inactive {
 	border: none;
-	background-color: var(--quaternary-dark);
-	color: var(--quaternary-light);
+	border: solid 2px var(--quaternary);
+	background-color: var(--off-white);
+	color: var(--off-black);
 }
 
 .filter__buttons--active {
+	border: none;
 	background-color: var(--quaternary-light);
-	border: 1px solid var(--quaternary-dark);
-	color: var(--quaternary-dark);
+	color: var(--off-black);
 }

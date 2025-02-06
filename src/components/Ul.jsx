@@ -14,8 +14,10 @@ export default function UnorderedList({
 	return (
 		<section className={className} style={style}>
 			<div className={sectionClassName}>
-				<div className="section__intro">
-					<h2>{title}</h2>
+				<div className="sticky">
+					<div className="section__intro">
+						<h2>{title}</h2>
+					</div>
 				</div>
 				<div className="big-list">
 					<ul>

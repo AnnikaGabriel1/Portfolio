@@ -11,8 +11,8 @@ export default function LandingSub({ title, subtitle, body, img, className }) {
 			<div className={className}>
 				<h1>{title}</h1>
 				<div className="landing-sub__text">
-					<h2>{subtitle}</h2>
-					<h6>{body}</h6>
+					<h4>{subtitle}</h4>
+					<p>{body}</p>
 				</div>
 			</div>
 		</div>

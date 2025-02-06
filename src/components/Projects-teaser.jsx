@@ -9,8 +9,8 @@ export default function ProjectTeaser({ style, title }) {
 		selectedIds.includes(project.id),
 	);
 	return (
-		<section className="section card__info--blue" style={style}>
-			<div className="section__intro">
+		<section className="section" style={style}>
+			<div className="section__intro section__intro--blue">
 				<h2>{title}</h2>
 			</div>
 
@@ -18,7 +18,7 @@ export default function ProjectTeaser({ style, title }) {
 				items={selectedProjects}
 				cardClassName="card--centered"
 				className="mediagrid__3-col"
-				cardInfo="card__info "
+				cardInfo="card__info card__info--blue"
 			/>
 			<CallToAction
 				title={cta[2].title}

@@ -7,11 +7,11 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 				<h1>Contact</h1>
 				<div className="contact__text">
 					<h2>Let&apos;s get in touch!</h2>
-					<h6>
+					<p>
 						I’m always excited to connect! Whether you have a project in mind,
 						want to collaborate, or simply say hi – drop me a message or find me
 						on social media.
-					</h6>
+					</p>
 				</div>
 				<div className="contact__socials-container">
 					<h4>Connect on social media</h4>

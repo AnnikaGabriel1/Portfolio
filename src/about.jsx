@@ -46,7 +46,9 @@ ReactDOM.createRoot(document.getElementById('root-main-about')).render(
 			style={{ marginTop: '0' }}
 			sectionClassName="section__intro--green"
 		/>
+
 		<Cv />
+
 		<Interests />
 	</React.StrictMode>,
 );

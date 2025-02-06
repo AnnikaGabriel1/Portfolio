@@ -1,16 +1,17 @@
 .filter {
 	display: flex;
 	flex-direction: column;
-	grid-column: 1;
+	grid-column: 1/7;
 	position: sticky;
-	top: var(--space-2xl);
-	background-color: var(--quaternary);
-	gap: var(--space-l);
-	border-radius: var(--space-l) var(--space-l) var(--space-l) 0;
-	padding: var(--space-l);
+	top: var(--space-l);
+	gap: var(--space-s);
+	padding: var(--space-l) var(--space-xl) var(--space-l) var(--space-xl);
+	width: 100%;
+	box-shadow: 0px 10px 10px -5px var(--off-black-lightest);
 
+	background-color: var(--off-white);
 	h2 {
-		color: var(--quaternary-dark);
+		color: var(--quaternary);
 	}
 }
 
@@ -22,6 +23,7 @@
 
 @media (--small) {
 	.filter {
-		top: var(--space-xl);
+		top: 0;
+		padding: var(--space-s);
 	}
 }

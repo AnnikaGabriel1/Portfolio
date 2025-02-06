@@ -57,7 +57,7 @@ ReactDOM.createRoot(document.getElementById('root-main-home')).render(
 
 		<ProjectTeaser title="Work" />
 
-		<Benefits style={{ paddingBottom: 'var(--space-l)' }} />
+		<Benefits />
 	</React.StrictMode>,
 );
 

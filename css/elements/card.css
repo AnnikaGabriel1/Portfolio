@@ -1,28 +1,20 @@
 .card--centered {
 	display: flex;
 	flex-direction: column;
-	grid-column: 1fr;
+	grid-column: span 2;
 	width: 100%;
-	border-radius: var(--space-xs) var(--space-xs) var(--space-xs) 0;
-	gap: var(--space-m);
 
 	.card__info {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		border-radius: var(--space-xs) var(--space-xs) var(--space-xs) 0;
-
-		h4 {
-			margin: 0 0 var(--space-xs) 0;
-		}
 	}
 
 	img {
-		background-color: var(--background-beige);
 		width: 100%;
 		aspect-ratio: 16/9;
-		border-radius: var(--space-xs) var(--space-xs) var(--space-xs)
-			var(--space-xs);
+		border-radius: var(--space-xs);
+		margin-bottom: var(--space-m);
 	}
 }
 
@@ -37,28 +29,54 @@
 }
 
 .card__color--red {
+	border-radius: var(--space-xs);
 	color: var(--text-color__dark);
-	background-color: var(--tertiary);
+	background-color: var(--tertiary-light);
+	padding: var(--space-l);
+	h4 {
+		margin: 0 0 var(--space-s) 0;
+	}
 }
 
 .card__stroke--red {
-	color: var(--tertiary);
+	color: var(--off-black);
 	border: 2px solid var(--tertiary);
-	padding: var(--space-s);
+	padding: var(--space-l);
+	border-radius: var(--space-xs);
+	h4 {
+		color: var(--tertiary-dark);
+	}
+	p {
+		margin-top: var(--space-s);
+	}
 }
 
 .card__color--blue {
 	color: var(--text-color__dark);
-	background-color: var(--quaternary);
-}
-
-.card__info--blue {
-	color: var(--quaternary-light);
 	h4 {
-		color: var(--quaternary-light);
+		color: var(--quaternary-dark);
 	}
 	h2 {
 		color: var(--quaternary);
+	}
+	p {
+		margin-top: var(--space-s);
+	}
+}
+
+.card__info--blue {
+	padding: 0 var(--space-l) 0 var(--space-2xs);
+
+	color: var(--off-black);
+	h4 {
+		margin: 0 0 var(--space-s) 0;
+	}
+
+	.icon-button {
+		color: var(--quaternary-dark) !important;
+	}
+	h4 {
+		color: var(--quaternary-dark);
 	}
 }
 
@@ -69,22 +87,15 @@
 
 @media (--medium) {
 	.card--centered {
-		.card__description {
-			align-items: center;
-		}
-		.card__info {
-			align-items: center;
-		}
+		grid-column: 3 span;
 	}
 }
 
 @media (--small) {
-	.card--centered {
-		.card__description {
-			align-items: center;
-		}
-		.card__info {
-			align-items: center;
-		}
+	.card__stroke--red {
+		padding: var(--space-s);
+	}
+	.card__color--red {
+		padding: var(--space-s);
 	}
 }

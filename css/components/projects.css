@@ -1,4 +1,4 @@
 .projects__media {
 	display: grid;
-	grid-column: 2/4;
+	grid-column: 3 span;
 }
