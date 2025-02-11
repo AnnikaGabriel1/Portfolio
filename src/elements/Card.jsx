@@ -21,7 +21,7 @@ export default function Card({
 			<div className={cardInfo}>
 				{url ? (
 					<a href={url} target={target}>
-						<h4 className="icon-button">
+						<h4 className="link-text">
 							{title}
 							<Icon className={iconClassName} src={iconPath} alt={iconAlt} />
 						</h4>
