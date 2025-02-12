@@ -117,8 +117,8 @@
 	--heading-color: var(--primary);
 	--text-color__dark: var(--off-black);
 	--heading-color__dark: var(--off-black);
-	--link-color: var(--accent);
-	--link-color-hover: var(--accent-light);
+	--link-color: var(--off-black);
+	--link-color-hover: var(--off-black);
 	--link-color-active: var(--off-black);
 	--link-color-visited: var(--off-black);
 	--nav-link-color: var(--accent);
