@@ -41,7 +41,7 @@ ReactDOM.createRoot(document.getElementById('root-main-about')).render(
 			title="Skills"
 			headerClassName="section__intro"
 			infoClassName="info"
-			className="section"
+			className="section__sticky--left"
 			ctaData={cta[0]}
 			style={{ marginTop: '0' }}
 			sectionClassName="section__intro--green"

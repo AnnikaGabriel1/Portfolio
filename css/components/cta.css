@@ -17,7 +17,7 @@
 	justify-content: space-between;
 	border: solid 2px var(--quaternary);
 	align-items: center;
-	color: var(--quaternary-dark);
+	color: var(--quaternary-contrast);
 	gap: var(--space-s);
 	border-radius: var(--space-xs);
 	padding: var(--space-l);
@@ -32,7 +32,7 @@
 	justify-content: space-between;
 	border: solid 2px var(--tertiary);
 	align-items: center;
-	color: var(--tertiary-dark);
+	color: var(--tertiary-contrast);
 	gap: var(--space-s);
 	border-radius: var(--space-xs);
 	padding: var(--space-l);
@@ -50,7 +50,7 @@
 	border-radius: var(--space-xs);
 	padding: var(--space-l);
 	gap: var(--space-s);
-	color: var(--secondary-dark);
+	color: var(--secondary-contrast);
 	button {
 		background-color: var(--secondary-light);
 		color: var(--off-black);

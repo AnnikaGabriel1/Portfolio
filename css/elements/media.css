@@ -37,7 +37,7 @@ iframe {
 	.client-logo {
 		width: 100%;
 		aspect-ratio: 16/9;
-		background-color: var(--secondary-dark);
+		background-color: var(--secondary-light);
 	}
 	.img__fullscreen {
 		padding: var(--space-l) 0px;

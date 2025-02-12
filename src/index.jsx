@@ -49,8 +49,9 @@ ReactDOM.createRoot(document.getElementById('root-main-home')).render(
 			items={workfield}
 			title="Expertise"
 			iconClassName="icon-button"
-			infoClassName="info "
-			className="section"
+			infoClassName="info"
+			headerClassName="section__intro"
+			className="section__sticky--left"
 			ctaData={cta[3]}
 			sectionClassName="section__intro--green"
 		/>

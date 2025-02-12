@@ -18,7 +18,7 @@
 			background-color: var(--primary-light);
 		}
 		h4 {
-			color: var(--primary-dark);
+			color: var(--primary-contrast);
 		}
 	}
 
@@ -52,7 +52,7 @@
 		justify-content: space-between;
 
 		h2 {
-			color: var(--primary-dark);
+			color: var(--primary-contrast);
 		}
 		p {
 			color: var(--off-black);

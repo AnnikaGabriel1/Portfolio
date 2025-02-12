@@ -3,11 +3,8 @@ import TileGrid from './Tilegrid.jsx';
 
 export default function Interests() {
 	return (
-		<section className="clients">
-			<div
-				className="section__title--beige"
-				style={{ marginBottom: 'var(--space-l)' }}
-			>
+		<section className="section clients">
+			<div className="section__intro section__intro--beige">
 				<h2>Interests</h2>
 			</div>
 

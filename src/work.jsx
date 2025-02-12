@@ -43,7 +43,7 @@ ReactDOM.createRoot(document.getElementById('root-main-work')).render(
 			iconClassName="icon-button"
 			headerClassName="section__intro"
 			infoClassName="info"
-			className="section"
+			className="section__sticky--left"
 			ctaData={cta[1]}
 			sectionClassName="section__intro--green"
 		/>

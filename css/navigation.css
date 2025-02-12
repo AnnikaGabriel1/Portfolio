@@ -38,6 +38,7 @@ nav {
 					box-shadow: inset 0 -2px 0 var(--off-black);
 				}
 				&:focus-visible {
+					outline-offset: unset;
 					border-radius: var(--space-3xs);
 				}
 
@@ -48,6 +49,7 @@ nav {
 					&:hover,
 					&:focus,
 					&:focus-visible {
+						outline-offset: unset;
 						box-shadow: inset 0 0 0 2px var(--off-black);
 					}
 				}

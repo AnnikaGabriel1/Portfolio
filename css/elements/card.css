@@ -20,7 +20,7 @@
 
 .card__color--green {
 	color: var(--text-color__dark);
-	background-color: var(--secondary);
+	background-color: var(--secondary-light);
 }
 
 .card__stroke--green {
@@ -44,7 +44,7 @@
 	padding: var(--space-l);
 	border-radius: var(--space-xs);
 	h4 {
-		color: var(--tertiary-dark);
+		color: var(--tertiary-contrast);
 	}
 	p {
 		margin-top: var(--space-s);
@@ -54,10 +54,10 @@
 .card__color--blue {
 	color: var(--text-color__dark);
 	h4 {
-		color: var(--quaternary-dark);
+		color: var(--quaternary-contrast);
 	}
 	h2 {
-		color: var(--quaternary);
+		color: var(--quaternary-contrast);
 	}
 	p {
 		margin-top: var(--space-s);
@@ -73,16 +73,16 @@
 	}
 
 	.icon-button {
-		color: var(--quaternary-dark) !important;
+		color: var(--quaternary-contrast) !important;
 	}
 	h4 {
-		color: var(--quaternary-dark);
+		color: var(--quaternary-contrast);
 	}
 }
 
 .card__color--beige {
 	color: var(--text-color__dark);
-	background-color: var(--primary);
+	background-color: var(--primary-leight);
 }
 
 @media (--medium) {

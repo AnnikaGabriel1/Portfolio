@@ -34,22 +34,26 @@
 
 .section__intro--beige {
 	padding: var(--space-l);
-	background-color: var(--primary);
+	background-color: var(--primary-light);
 	h2 {
-		color: var(--primary-dark);
+		color: var(--off-black);
 	}
 }
 
 .section__intro--green {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	grid-column: 1/7;
+	gap: var(--space-l);
 
 	h2 {
-		color: var(--off-black);
+		color: var(--secondary-contrast);
 	}
 	.big-list__text {
 		padding: var(--space-l);
 		h4 {
-			color: var(--secondary-dark);
+			color: var(--secondary-contrast);
 		}
 	}
 	p {
@@ -57,12 +61,15 @@
 	}
 
 	.sticky {
+		display: flex;
+		flex-direction: column;
+		grid-column: 1/7;
 		background-color: var(--off-white);
 		/* border-radius: 0 0 var(--space-xs) var(--space-xs); */
 		position: sticky;
 		top: calc(70px);
-		padding-top: var(--space-m);
-		padding-bottom: var(--space-s);
+		padding: var(--space-l) var(--space-xl) var(--space-l) var(--space-xl);
+		box-shadow: 0px 10px 10px -5px var(--off-black);
 	}
 	.section__intro {
 		background-color: var(--secondary-light);
@@ -74,7 +81,7 @@
 .section__sticky--left {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-s);
+	gap: var(--space-l);
 	align-items: start;
 
 	h2 {

@@ -6,34 +6,27 @@
 	/*Colors_________________________________*/
 	/*Primary*/
 	--primary: #ada178;
-	--primary-lighter: #f7efce;
 	--primary-light: #b9b18b;
-	--primary-darker: #e6c663;
-	--primary-dark: #756638;
+	--primary-dark: #806f4e;
+	--primary-contrast: #756638;
 
 	/*Secondary*/
 	--secondary: #78ad85;
-
 	--secondary-light: #94c19d;
-	--secondary-darker: #387545;
-	--secondary-dark: #387545;
+	--secondary-dark: #326943;
+	--secondary-contrast: #387545;
 
 	/*Tertiary*/
 	--tertiary: #ad787b;
-	--tertiary-dark: #75383b;
 	--tertiary-light: #c9a3a5;
+	--tertiary-dark: #805056;
+	--tertiary-contrast: #75383b;
 
 	/*Quaternary*/
 	--quaternary: #777dad;
-	--quaternary-dark: #383d75;
+	--quaternary-dark: #575b7c;
 	--quaternary-light: #939cc1;
-
-	/*Accent*/
-	--accent: #777dad;
-	--accent-lighter: #939cc1;
-	--accent-light: #a9b4d0;
-	--accent-darker: #696d99;
-	--accent-dark: #575b7c;
+	--quaternary-contrast: #383d75;
 
 	/*Sucess*/
 	--sucess: #6bffb6;
@@ -56,13 +49,12 @@
 
 	/*Off-White*/
 	--off-white: #e7e4d7;
-	--off-white-lighter: #f8f7f2;
-	--off-white-darker: #d2ccb5;
+	--off-white-light: #f8f7f2;
+	--off-white-dark: #d2ccb5;
 
 	/*Off-Black*/
 	--off-black: #181a19;
-	--off-black-light: #2f3231;
-	--off-black-lightest: #404543;
+	--off-black-light: #404543;
 
 	/*Variables_________________________________*/
 	/*Backgrounds & Decorative Surfaces*/
