@@ -1,15 +1,3 @@
-.logo,
-nav ul li {
-	transition: all var(--ease-out-back-duration-2) var(--ease-out-back-timing-1);
-	transform-origin: 0% 100%;
-	cursor: pointer;
-}
-
-.logo:hover,
-nav ul li:hover {
-	transform: scale(1.16);
-}
-
 nav {
 	display: flex;
 	width: 100%;
@@ -17,31 +5,42 @@ nav {
 	top: 0;
 	justify-content: space-between;
 	background: var(--off-white);
-	border: 2px solid var(--off-black);
+	border-bottom: 2px solid var(--off-black);
 	backdrop-filter: blur(8px);
 	padding: var(--space-s) var(--space-xl);
 	z-index: 1;
 
+	.logo {
+		cursor: pointer;
+	}
+
 	ul {
 		display: flex;
-		gap: var(--space-s);
 		list-style-type: none;
 		padding: 0;
 
 		li {
 			a {
 				text-decoration: none;
+				display: inline-flex;
+				padding: var(--space-3xs) var(--space-s);
+				align-items: center;
 				color: var(--off-black);
-				transition: all var(--ease-out-back-duration-2)
-					var(--ease-out-back-timing-1) !important;
 
 				&:visited {
 					text-decoration: none;
 					cursor: pointer;
 				}
 
+				&:hover,
+				&:focus,
+				&:focus-visible {
+					box-shadow: inset 0 -2px 0 var(--off-black);
+				}
+
 				&.active-page {
-					color: var(--primary-dark) !important; /* Stil für die aktive Seite */
+					border-radius: var(--space-3xs);
+					box-shadow: inset 0 -2px 0 var(--off-black);
 				}
 			}
 		}
