@@ -12,59 +12,37 @@
 	width: 100%;
 }
 
-.tile {
-	flex: 1 1 12%;
-	max-width: calc(12% - var(--space-s));
-	min-width: 144px;
-	position: relative;
-	aspect-ratio: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-
-	img {
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-		transition: transform 0.3s ease;
-	}
-}
-
 .tilegrid {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	flex-wrap: wrap;
+	gap: var(--space-s);
+	align-items: flex-start;
+	overflow: hidden;
 
-	.client__tilegrid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-		flex-wrap: wrap;
-		gap: var(--space-s);
-		align-items: flex-start;
+	.tile {
+		grid-column: 1fr;
+		position: relative;
+		aspect-ratio: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		border-radius: var(--space-2xs);
 		overflow: hidden;
 
-		.client__tilegrid-tile {
-			grid-column: 1fr;
-			position: relative;
-			aspect-ratio: 1;
-			display: flex;
-			flex-direction: column;
-			align-items: stretch;
-			border-radius: var(--space-2xs);
-
-			h4 {
-				color: var(--text-color__dark);
-				position: absolute;
-				text-align: center;
-				top: 50%; /* Vertikal zentrieren */
-				left: 50%; /* Horizontal zentrieren */
-				transform: translate(-50%, -50%); /* Exakte Zentrierung */
-			}
-
-			img {
-				width: 100%;
-				border-radius: inherit;
-			}
+		h4 {
+			color: var(--text-color__dark);
+			position: absolute;
+			text-align: center;
+			top: 50%; /* Vertikal zentrieren */
+			left: 50%; /* Horizontal zentrieren */
+			transform: translate(-50%, -50%); /* Exakte Zentrierung */
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: transform 0.3s ease;
 		}
 	}
 }
@@ -96,11 +74,18 @@
 			}
 		}
 	}
-	.tile {
-		flex: 1 1 20%;
-		max-width: calc(20% - var(--space-s));
-		min-width: 64px;
+	.tilegrid {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		.tile {
+			width: 100%;
+			max-width: unset;
+			min-width: unset;
+		}
 	}
+
 	.mediagrid__3-col {
 		display: flex;
 		flex-direction: column;
@@ -108,7 +93,6 @@
 	.mediagrid__2-col {
 		display: flex;
 		flex-direction: column;
-		margin: var(--space-s);
 		gap: var(--space-xl) var(--space-l);
 	}
 }

@@ -20,13 +20,14 @@
 .sticky {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	grid-column: 1/7;
 	position: sticky;
 	top: 70px;
 	padding: var(--space-l) var(--space-xl) var(--space-l) var(--space-xl);
 	border-bottom: 2px solid var(--off-black);
 	background-color: var(--off-white);
-	/* box-shadow: -2px 2px 8px 0px var(--off-black) !important; */
+	z-index: 100;
 }
 
 .section__intro--red {
@@ -169,13 +170,20 @@
 	.section {
 		display: flex;
 		flex-direction: column;
-		margin: var(--space-s);
 
 		.section__intro {
 			display: flex;
 			flex-direction: column;
 			padding: var(--space-s);
 		}
+
+		.section__content {
+			padding: var(--space-l) var(--space-s) var(--space-l) var(--space-s);
+		}
+	}
+	.sticky {
+		top: 0px;
+		padding: var(--space-s);
 	}
 
 	.section__intro--green {

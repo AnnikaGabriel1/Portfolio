@@ -56,20 +56,18 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 				</div>
 			</div>
 
-			<div className="contact__content">
-				<div>
-					<div>
-						<h4>Send me an e-mail</h4>
-						<a
-							href="mailto:annika.gabriel@live.de"
-							aria-label="Click to open E-Mail Programm"
-						>
-							<button title="Click to send an e-mail">
-								E-mail
-								<Icon className={iconClassName} src={iconPath} alt={altText} />
-							</button>
-						</a>
-					</div>
+			<div>
+				<div className="contact__content">
+					<h4>Send me an e-mail</h4>
+					<a
+						href="mailto:annika.gabriel@live.de"
+						aria-label="Click to open E-Mail Programm"
+					>
+						<button title="Click to send an e-mail">
+							E-mail
+							<Icon className={iconClassName} src={iconPath} alt={altText} />
+						</button>
+					</a>
 				</div>
 				<div className="imprint">
 					<a

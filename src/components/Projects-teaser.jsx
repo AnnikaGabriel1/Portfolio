@@ -10,7 +10,7 @@ export default function ProjectTeaser({ title }) {
 	);
 	return (
 		<section className="section section__intro--blue">
-			<div className="section__intro">
+			<div className="section__intro sticky">
 				<h2>{title}</h2>
 			</div>
 			<div className="section__content">

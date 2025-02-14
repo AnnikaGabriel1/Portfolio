@@ -8,7 +8,7 @@ nav {
 	border-bottom: 2px solid var(--off-black);
 	backdrop-filter: blur(8px);
 	padding: var(--space-s) var(--space-xl);
-	z-index: 1;
+	z-index: 200;
 
 	.logo {
 		cursor: pointer;
@@ -66,5 +66,10 @@ nav {
 		padding: var(--space-xs) var(--space-xs);
 		top: auto;
 		bottom: 0;
+		border-bottom: none;
+		border-top: 2px var(--off-black) solid;
+		ul li a {
+			padding: var(--space-3xs) var(--space-2xs);
+		}
 	}
 }

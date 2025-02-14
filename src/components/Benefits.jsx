@@ -4,7 +4,7 @@ import cta from '../cta.js';
 export default function Benefits({ style }) {
 	return (
 		<section className="section section__intro--blue" style={style}>
-			<div className="section__intro">
+			<div className="section__intro sticky">
 				<h2>Benefits</h2>
 			</div>
 			<div className="section__content">
