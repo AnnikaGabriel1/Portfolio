@@ -6,8 +6,8 @@ import MediaGrid from './Mediagrid';
 export default function Projects() {
 	const [filteredProjects, setFilteredProjects] = useState(projects);
 	return (
-		<section className="section__sticky--left">
-			<div className="filter">
+		<section className="section section__intro--blue">
+			<div className="sticky">
 				<h2>Projects</h2>
 				<Filter
 					filters={[
@@ -25,7 +25,7 @@ export default function Projects() {
 					onFilterChange={(filteredItems) => setFilteredProjects(filteredItems)}
 				/>
 			</div>
-			<div className="projects__media">
+			<div className="section__content">
 				<MediaGrid
 					items={filteredProjects}
 					cardClassName="card--centered"

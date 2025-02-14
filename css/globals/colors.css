@@ -105,8 +105,8 @@
 	--button-border-color: var(--accent);
 
 	/*Text*/
-	--text-color: var(--primary);
-	--heading-color: var(--primary);
+	--text-color: var(--off-black);
+	--heading-color: var(--off-black);
 	--text-color__dark: var(--off-black);
 	--heading-color__dark: var(--off-black);
 	--link-color: var(--off-black);

@@ -1,6 +1,6 @@
 .big-list {
 	grid-column: 1/7;
-	margin: 0 var(--space-xl) var(--space-xl) var(--space-xl);
+	padding: var(--space-l) var(--space-xl) var(--space-l) var(--space-xl);
 	ul,
 	ol {
 		display: flex;

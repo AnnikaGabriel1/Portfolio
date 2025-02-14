@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	gap: var(--space-xl) var(--space-s);
-	margin: 0 var(--space-xl) var(--space-xl) var(--space-xl);
 }
 
 .mediagrid__3-col {
@@ -10,7 +9,6 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column: 1/7;
 	gap: var(--space-s);
-
 	width: 100%;
 }
 
@@ -32,10 +30,9 @@
 	}
 }
 
-.clients {
+.tilegrid {
 	display: flex;
 	flex-direction: column;
-	margin: var(--space-xl);
 	justify-content: space-between;
 
 	.client__tilegrid {

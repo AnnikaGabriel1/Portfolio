@@ -4,6 +4,7 @@
 	justify-content: space-between;
 	height: calc(100dvh - 70px - var(--space-m));
 	padding: 0 var(--space-xl) var(--space-xl) var(--space-xl);
+	margin-top: var(--space-3xl);
 
 	h4 {
 		margin-bottom: var(--space-s);

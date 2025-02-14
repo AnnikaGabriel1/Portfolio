@@ -43,7 +43,6 @@ ReactDOM.createRoot(document.getElementById('root-main-home')).render(
 			title={intro[0].title}
 			subtitle={intro[0].subtitle}
 			body={intro[0].body}
-			className="intro__primary"
 		/>
 		<UnorderedList
 			items={workfield}
