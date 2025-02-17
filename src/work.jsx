@@ -4,16 +4,13 @@ import UnorderedList from './components/Ul.jsx';
 import Clients from './components/Clients.jsx';
 import Landing from './components/Landing.jsx';
 import landing from './landing.js';
-import illustrations from './illustrations.js';
+
 import Nav from './components/Nav.jsx';
 
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import cta from './cta.js';
 import workflow from './workflow.js';
-
-const getIllustrationsByIds = (ids) =>
-	illustrations.filter((item) => ids.includes(item.id));
 
 ReactDOM.createRoot(document.getElementById('root-header-work')).render(
 	<React.StrictMode>
@@ -22,8 +19,10 @@ ReactDOM.createRoot(document.getElementById('root-header-work')).render(
 			title={landing[1].title}
 			subtitle={landing[1].subtitle}
 			body={landing[1].body}
-			img={getIllustrationsByIds([18, 19, 20, 21, 9, 5, 8, 3])}
-			imgAlt={illustrations}
+			radius={8}
+			radiusSpirale={10}
+			sinus={1.4}
+			cosinus={2.1}
 		/>
 	</React.StrictMode>,
 );

@@ -1,0 +1,54 @@
+label {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: var(--space-xs);
+
+	h5 {
+		grid-column: 1/3;
+	}
+
+	span {
+		grid-column: 3/4;
+		text-align: end;
+	}
+
+	input {
+		grid-column: 1/4;
+	}
+}
+
+input[type='range'] {
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']::-webkit-slider-runnable-track {
+	background: var(--off-black);
+	height: 2px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	margin-top: -8px; /* Centers thumb on the track */
+	background-color: var(--primary);
+	height: 16px;
+	width: 16px;
+	border-radius: var(--space-xs);
+}
+
+/******** Firefox ********/
+input[type='range']::-moz-range-track {
+	background: var(--off-black);
+	height: 2px;
+}
+input[type='range']::-moz-range-thumb {
+	border: none; /*Removes extra border that FF applies*/
+	border-radius: var(--space-xs);
+	background-color: var(--primary);
+	height: 16px;
+	width: 16px;
+}

@@ -4,7 +4,7 @@
 	flex-direction: column;
 	padding: calc(70px + var(--space-m)) var(--space-xl) var(--space-xl);
 	justify-content: space-between;
-	overflow: auto;
+
 	gap: var(--space-l);
 
 	.landing__tilegrid {
@@ -39,15 +39,6 @@
 			h2 {
 				color: var(--primary-contrast);
 			}
-		}
-	}
-
-	.landing-main__content {
-		width: 100%;
-		h1 {
-			color: var(--off-black);
-
-			text-shadow: none;
 		}
 	}
 }

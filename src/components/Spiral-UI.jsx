@@ -1,182 +1,182 @@
-import { useState, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
-const SpiralApp = () => {
-	const [speed, setSpeed] = useState(1);
-	const [sinus, setSinus] = useState(38);
-	const [cosinus, setCosinus] = useState(44);
-	const [kugelRadius, setKugelRadius] = useState(5);
-	const [spiralRadius, setSpiralRadius] = useState(5);
+export default function SpiralApp({
+	initialRadius,
+	initialRadiusSpirale,
+	initialSinus,
+	initialCosinus,
+}) {
+	const canvasRef = useRef(null);
+	const ctxRef = useRef(null);
+	const [radius, setRadius] = useState(initialRadius); // Startwert für Kugelradius
+	const [radiusSpirale, setRadiusSpirale] = useState(initialRadiusSpirale);
+	const [sinus, setSinus] = useState(initialSinus);
+	const [cosinus, setCosinus] = useState(initialCosinus);
+	const [numBalls] = useState(800);
+	const angle = useRef(0);
+	const speed = useRef(0.001);
+
+	const colorPalette = [
+		'#ada178',
+		'#b9b18b',
+		'#806f4e',
+		'#756638',
+		'#78ad85',
+		'#94c19d',
+		'#326943',
+		'#387545',
+		'#ad787b',
+		'#c9a3a5',
+		'#805056',
+		'#75383b',
+		'#777dad',
+		'#575b7c',
+		'#939cc1',
+		'#383d75',
+	];
+
+	const [ballColors, setBallColors] = useState([]);
 
 	useEffect(() => {
-		const svg = document.getElementById('svg');
-		const w = window.innerWidth;
-		const h = window.innerHeight;
-		svg.setAttribute('width', w);
-		svg.setAttribute('height', h);
+		if (ballColors.length === 0) {
+			const colors = Array.from(
+				{ length: numBalls },
+				() => colorPalette[Math.floor(Math.random() * colorPalette.length)],
+			);
+			setBallColors(colors);
+		}
 
-		// Die initKugeln-Funktion direkt im useEffect definieren
-		const initKugeln = () => {
-			const collector = [];
-			const objMax = 200;
+		const canvas = canvasRef.current;
+		const ctx = canvas.getContext('2d');
+		ctxRef.current = ctx;
 
-			for (let i = 0; i < objMax; i++) {
-				const kugel = createKugel(i);
-				collector.push(kugel);
-				svg.appendChild(kugel.element);
+		// Berechnung der Kugeln und der Spirale
+		function draw() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+			for (let i = 0; i < numBalls; i++) {
+				const currentAngle = angle.current + i * 0.2;
+				const x =
+					canvas.width / 2 +
+					(radiusSpirale + i * 1) * Math.cos(currentAngle * cosinus);
+				const y =
+					canvas.height / 2 +
+					(radiusSpirale + i * 1) * Math.sin(currentAngle * sinus);
+
+				const ballColor = ballColors[i];
+
+				ctx.beginPath();
+				ctx.arc(x, y, radius, 0, Math.PI * 2);
+				ctx.fillStyle = ballColor;
+				ctx.fill();
 			}
 
-			animateKugeln(collector);
-		};
+			// Nächsten Frame anfordern
+			requestAnimationFrame(draw);
+		}
 
-		initKugeln(); // initKugeln hier aufrufen
-	}, [sinus, cosinus, kugelRadius, spiralRadius]); // Sicherstellen, dass diese Variablen in der Abhängigkeitsliste enthalten sind
+		draw();
+	}, [radius, radiusSpirale, sinus, cosinus, numBalls, ballColors]);
 
-	const createKugel = (index) => {
-		const kugel = {
-			id: index,
-			col: randomColor(),
-			move: (time) => {
-				const x =
-					Math.cos(time / 1000 + (index * cosinus) / 10) * spiralRadius +
-					window.innerWidth / 2;
-				const y =
-					Math.sin(time / 1000 + (index * sinus) / 10) * spiralRadius +
-					window.innerHeight / 2;
-				kugel.element.setAttribute('cx', x);
-				kugel.element.setAttribute('cy', y);
-			},
-			element: document.createElementNS('http://www.w3.org/2000/svg', 'circle'),
-		};
-
-		kugel.element.setAttribute('r', kugelRadius);
-		kugel.element.setAttribute('fill', kugel.col);
-
-		return kugel;
+	// Funktion für die Range-Slider-Änderung
+	const changeRadius = (e) => {
+		setRadius(Number(e.target.value));
+		resetSpeedAndAngle(); // Geschwindigkeit zurücksetzen
 	};
 
-	const randomColor = () => {
-		const r = Math.floor(Math.random() * 156) + 100;
-		const g = Math.floor(Math.random() * 156) + 100;
-		const b = Math.floor(Math.random() * 156) + 100;
-		return `rgb(${r}, ${g}, ${b})`;
+	const changeSpiralRadius = (e) => {
+		setRadiusSpirale(Number(e.target.value));
+		resetSpeedAndAngle(); // Geschwindigkeit zurücksetzen
 	};
 
-	const animateKugeln = (collector) => {
-		const startTime = Date.now();
-
-		const updatePositions = () => {
-			const timeElapsed = Date.now() - startTime;
-
-			collector.forEach((kugel) => {
-				kugel.move(timeElapsed);
-			});
-
-			requestAnimationFrame(updatePositions);
-		};
-
-		updatePositions();
+	const changeSinus = (e) => {
+		setSinus(Number(e.target.value));
+		resetSpeedAndAngle(); // Geschwindigkeit zurücksetzen
 	};
 
-	const handleSpeedChange = (e) => {
-		setSpeed(e.target.value);
+	const changeCosinus = (e) => {
+		setCosinus(Number(e.target.value));
+		resetSpeedAndAngle(); // Geschwindigkeit zurücksetzen
 	};
 
-	const handleSinusChange = (e) => {
-		setSinus(e.target.value);
+	// Funktion zum Zurücksetzen von Winkel und Geschwindigkeit
+	const resetSpeedAndAngle = () => {
+		angle.current = 0; // Setzt den Winkel zurück
+		speed.current = 0.001; // Setzt die Geschwindigkeit zurück
 	};
 
-	const handleCosinusChange = (e) => {
-		setCosinus(e.target.value);
-	};
+	// Funktion zum Aktualisieren des Winkels ohne direkte Einflussnahme auf die Geschwindigkeit
+	useEffect(() => {
+		const interval = setInterval(() => {
+			angle.current += speed.current;
+		}, 1000 / 60); // 60 FPS für gleichmäßige Winkelaktualisierung
 
-	const handleKugelRadiusChange = (e) => {
-		setKugelRadius(e.target.value);
-	};
-
-	const handleSpiralRadiusChange = (e) => {
-		setSpiralRadius(e.target.value);
-	};
+		return () => clearInterval(interval); // Aufräumen der Intervalle
+	}, []);
 
 	return (
-		<div>
-			<div id="gui">
-				<div>
-					<label htmlFor="speed" id="speed_label">
-						Speed: {speed}
-					</label>
-					<inputy
-						type="range"
-						id="speed"
-						min="-100"
-						max="100"
-						step="1"
-						value={speed}
-						onChange={handleSpeedChange}
-					/>
-				</div>
-				<div>
-					<label htmlFor="radius" id="radius_label">
-						Kugelradius: {kugelRadius}%
-					</label>
+		<div className="spiral__wrapper">
+			<canvas
+				ref={canvasRef}
+				width="1000" // Feste Breite für Canvas
+				height="600" // Feste Höhe für Canvas
+			/>
+			<div className="spiral__label">
+				<label>
+					<h5>Circle Radius</h5>
+					<span>
+						<h5>{radius} px</h5>
+					</span>
 					<input
 						type="range"
-						id="radius"
-						min="1"
-						max="100"
-						step="1"
-						value={kugelRadius}
-						onChange={handleKugelRadiusChange}
+						min="2"
+						max="20"
+						value={radius}
+						onChange={changeRadius}
 					/>
-				</div>
-				<div>
-					<label htmlFor="radiusspirale" id="radiusspirale_label">
-						Spiralradius: {spiralRadius}%
-					</label>
+				</label>
+				<label>
+					<h5>Spiral Radius</h5>
+					<span>
+						<h5>{radiusSpirale} px</h5>
+					</span>
 					<input
 						type="range"
-						id="radiusspirale"
 						min="1"
 						max="100"
-						step="1"
-						value={spiralRadius}
-						onChange={handleSpiralRadiusChange}
+						value={radiusSpirale}
+						onChange={changeSpiralRadius}
 					/>
-				</div>
-				<div>
-					<label htmlFor="sinus" id="sinus_label">
-						Sinus: {sinus}
-					</label>
+				</label>
+				<label>
+					<h5>Sinus</h5>
+					<span>
+						<h5>{sinus}</h5>
+					</span>
 					<input
 						type="range"
-						id="sinus"
-						min="1"
-						max="100"
-						step="1"
+						min="0.1"
+						max="3"
+						step="0.1"
 						value={sinus}
-						onChange={handleSinusChange}
+						onChange={changeSinus}
 					/>
-				</div>
-				<div>
-					<label htmlFor="cosinus" id="cosinus_label">
-						Cosinus: {cosinus}
-					</label>
+				</label>
+				<label>
+					<h5>Cosinus</h5>
+					<span>
+						<h5>{cosinus}</h5>
+					</span>
 					<input
 						type="range"
-						id="cosinus"
-						min="1"
-						max="100"
-						step="1"
+						min="0.1"
+						max="3"
+						step="0.1"
 						value={cosinus}
-						onChange={handleCosinusChange}
+						onChange={changeCosinus}
 					/>
-				</div>
-			</div>
-
-			<div id="spirale">
-				<svg id="svg" width="1000" height="1000"></svg>
+				</label>
 			</div>
 		</div>
 	);
-};
-
-export default SpiralApp;
+}

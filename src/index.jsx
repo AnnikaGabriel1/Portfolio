@@ -1,31 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Landing from './components/Landing.jsx';
-import landing from './landing.js';
 import Nav from './components/Nav.jsx';
-import illustrations from './illustrations.js';
 import IntroSecondary from './components/Intro.jsx';
 import intro from './intro.js';
 import ProjectTeaser from './components/Projects-teaser.jsx';
-
 import cta from './cta.js';
 import Benefits from './components/Benefits.jsx';
 import Contact from './components/Contact.jsx';
 import UnorderedList from './components/Ul.jsx';
 import workfield from './workfield.js';
-
-const getIllustrationsByIds = (ids) =>
-	illustrations.filter((item) => ids.includes(item.id));
+import landing from './landing.js';
 
 ReactDOM.createRoot(document.getElementById('root-header-home')).render(
 	<React.StrictMode>
 		<Landing
-			className={'landing-main__content'}
+			className={'landing'}
 			title={landing[2].title}
-			img={getIllustrationsByIds([
-				1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 18, 19, 20, 21,
-			])}
-			imgAlt={illustrations}
+			radius={8}
+			radiusSpirale={10}
+			sinus={0.6}
+			cosinus={0.5}
 		/>
 	</React.StrictMode>,
 );

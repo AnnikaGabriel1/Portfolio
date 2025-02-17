@@ -1,7 +1,32 @@
+.spiral__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-l);
+	width: 100%;
+	height: 100%;
+	border: 2px solid var(--off-black);
+	justify-content: center;
+	align-items: center;
+
+	canvas {
+		width: 1000px; /* Feste Größe des Canvas */
+		height: 100%; /* Feste Größe des Canvas */
+	}
+}
+
+.spiral__label {
+	display: flex;
+	width: 100%;
+	gap: var(--space-s);
+	padding: var(--space-s);
+	/* border-top: solid 2px var(--off-black); */
+
+	label {
+		width: 100%;
+	}
+}
+
 #spirale {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -17,10 +42,48 @@
 }
 
 .regler {
-	position: absolute;
-	z-index: 1000; /* Stellt sicher, dass die Regler über dem SVG liegen */
+	display: flex;
+	z-index: 3000; /* Stellt sicher, dass die Regler über dem SVG liegen */
 }
 
 input[type='range'] {
-	z-index: 1000; /* Falls du spezifische Elemente wie Range-Regler hast */
+	z-index: 3000; /* Falls du spezifische Elemente wie Range-Regler hast */
+}
+
+.special-effect {
+	/*fill:yellow;*/
+	stroke-width: 2px;
+	stroke: yellow;
+}
+
+.special-effect:hover {
+	fill: blue;
+	stroke-width: 5px;
+	stroke: yellow;
+}
+
+#svg {
+	position: absolute;
+	top: 0;
+}
+
+input {
+	width: 100%;
+}
+
+.range {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	gap: var(--space-xs);
+}
+#gui {
+	display: flex;
+	gap: var(--space-xs);
+	width: 100%;
+	z-index: 1000;
+}
+
+#gui div {
+	padding: 1px;
 }

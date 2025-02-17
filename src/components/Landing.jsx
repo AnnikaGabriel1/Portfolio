@@ -1,9 +1,23 @@
 import SpiralApp from './Spiral-UI.jsx';
 
-export default function LandingSub({ title, subtitle, body, className }) {
+export default function Landing({
+	title,
+	subtitle,
+	body,
+	className,
+	radius,
+	radiusSpirale,
+	sinus,
+	cosinus,
+}) {
 	return (
 		<div className="landing">
-			<SpiralApp />
+			<SpiralApp
+				initialRadius={radius}
+				initialRadiusSpirale={radiusSpirale}
+				initialSinus={sinus}
+				initialCosinus={cosinus}
+			/>
 			<div className={className}>
 				<h1>{title}</h1>
 				<div className="landing-sub__text">

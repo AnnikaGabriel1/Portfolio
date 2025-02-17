@@ -7,13 +7,10 @@ import cta from './cta.js';
 import Contact from './components/Contact.jsx';
 import softwares from './softwares.js';
 import Nav from './components/Nav.jsx';
-import illustrations from './illustrations.js';
+
 import Cv from './components/Cv.jsx';
 
 import Interests from './components/Interests.jsx';
-
-const getIllustrationsByIds = (ids) =>
-	illustrations.filter((item) => ids.includes(item.id));
 
 ReactDOM.createRoot(document.getElementById('root-header-about')).render(
 	<React.StrictMode>
@@ -22,8 +19,10 @@ ReactDOM.createRoot(document.getElementById('root-header-about')).render(
 			title={landing[0].title}
 			subtitle={landing[0].subtitle}
 			body={landing[0].body}
-			img={getIllustrationsByIds([6, 8, 9, 10, 13, 14, 15, 16, 17, 18])}
-			imgAlt={illustrations}
+			radius={8}
+			radiusSpirale={10}
+			sinus={1.6}
+			cosinus={0.8}
 		/>
 	</React.StrictMode>,
 );
