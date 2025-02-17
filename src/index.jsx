@@ -15,7 +15,6 @@ import landing from './landing.js';
 ReactDOM.createRoot(document.getElementById('root-header-home')).render(
 	<React.StrictMode>
 		<Landing
-			className={'landing'}
 			title={landing[2].title}
 			radius={8}
 			radiusSpirale={10}
