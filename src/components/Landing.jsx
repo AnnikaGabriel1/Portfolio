@@ -1,9 +1,9 @@
-import TileGrid from './Tilegrid';
+import SpiralApp from './Spiral-UI.jsx';
 
-export default function LandingSub({ title, subtitle, body, img, className }) {
+export default function LandingSub({ title, subtitle, body, className }) {
 	return (
 		<div className="landing">
-			<TileGrid items={img} className="tilegrid" tileClassName="tile" />
+			<SpiralApp />
 			<div className={className}>
 				<h1>{title}</h1>
 				<div className="landing-sub__text">

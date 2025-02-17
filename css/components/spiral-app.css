@@ -1,0 +1,26 @@
+#spirale {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+
+.regler {
+	position: absolute;
+	z-index: 1000; /* Stellt sicher, dass die Regler über dem SVG liegen */
+}
+
+input[type='range'] {
+	z-index: 1000; /* Falls du spezifische Elemente wie Range-Regler hast */
+}
