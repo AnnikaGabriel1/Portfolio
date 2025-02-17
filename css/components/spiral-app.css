@@ -87,3 +87,36 @@ input {
 #gui div {
 	padding: 1px;
 }
+
+@media (--medium) {
+	.spiral__wrapper {
+		height: auto;
+		canvas {
+			width: 600px;
+			height: auto;
+		}
+	}
+}
+
+@media (--small) {
+	.spiral__wrapper {
+		height: unset;
+		gap: 0;
+		canvas {
+			width: 300px;
+		}
+
+		.spiral__label {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: var(--space-s);
+			padding: var(--space-s);
+			/* border-top: solid 2px var(--off-black); */
+
+			label {
+				width: 100%;
+			}
+		}
+	}
+}

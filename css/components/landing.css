@@ -57,7 +57,7 @@
 
 @media (--small) {
 	.landing {
-		height: calc(100dvh - 60px);
+		height: auto;
 		padding: var(--space-s);
 
 		.landing__tilegrid {
