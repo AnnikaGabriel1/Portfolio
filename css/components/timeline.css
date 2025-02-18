@@ -1,0 +1,72 @@
+.timeline {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1/7;
+	gap: var(--space-l);
+
+	.timeline__milestone {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: var(--space-s);
+	}
+
+	.timeline__milestone::after {
+		grid-column: 1/2;
+		content: ''; /* Leeres Pseudoelement */
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		height: var(--space-l); /* Breite der Linie */
+		width: 2px;
+		background-color: var(--off-black); /* Farbe der Linie */
+	}
+
+	/* Verhindert, dass eine Linie nach dem letzten Milestone erscheint */
+	.timeline__milestone:last-child::after {
+		display: none;
+	}
+
+	.timeline__position {
+		display: flex;
+		flex-direction: column;
+		padding: var(--space-l);
+		grid-column: 2/7;
+		border: 2px solid var(--off-black);
+		gap: var(--space-s);
+	}
+
+	.timeline__info {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.timeline__description {
+		display: flex;
+		grid-column: 4/6;
+	}
+
+	.timeline__time-period {
+		background-color: var(--off-black);
+		color: var(--off-white-dark);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: var(--space-s);
+		position: relative;
+		grid-column: 1/2;
+		border: 2px solid var(--off-black);
+	}
+
+	.timeline__time-period::after {
+		content: ''; /* Leeres Pseudoelement */
+		position: absolute;
+		top: 50%; /* Vertikal zentriert */
+		left: 100%; /* Startet am rechten Rand des Containers */
+		transform: translateY(-50%); /* Vertikal genau mittig ausrichten */
+		width: calc(var(--space-s) + 2px);
+		height: 2px; /* Dicke des Strichs */
+		background-color: var(--off-black); /* Farbe des Strichs */
+	}
+}

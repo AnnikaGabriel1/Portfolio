@@ -1,11 +1,18 @@
 export default [
 	{
 		id: 1,
-		label: 'Development, Branding, UX, UI, Typography/Lettering',
+		label: 'Webdesign, Development, Branding, UX, UI, Typography/Lettering',
 		img: '/Portfolio/images/thumbnail_j-jar.webp',
 		imgAlt: 'Mockup of a light Music-Sequencer width colorful Pads',
 		title: 'J-JAR Sequencer',
-		category: ['UX', 'UI', 'Branding', 'Typography/Lettering', 'Development'],
+		category: [
+			'Webdesign',
+			'UX',
+			'UI',
+			'Branding',
+			'Typography/Lettering',
+			'Development',
+		],
 		url: 'https://annikagabriel1.github.io/J-JAR/',
 		target: '_blank',
 		iconPath:
@@ -26,12 +33,12 @@ export default [
 	},
 	{
 		id: 3,
-		label: 'UX, UI, Branding',
+		label: 'Webdesign, UX, UI, Branding',
 		img: '/Portfolio/images/thumbnail_hcatplus.webp',
 		imgAlt:
 			'Mockup of the campaign-landingpage on a Computer and on a mobile phone',
 		title: 'HCAT+ Outreach Campaign',
-		category: ['UX', 'UI', 'Branding'],
+		category: ['Webdesign', 'UX', 'UI', 'Branding'],
 		description:
 			"I supported the RDRGZ team in UX, UI, and branding to create a campaign website for the Hamburg Centre of Aviation Training-Lab (HCAT+) e.V., launched as part of their new outreach campaign to tackle the skills shortage. The project focused on delivering an intuitive user experience and a visually appealing design to effectively communicate the campaign's mission and goals.",
 	},
@@ -47,11 +54,11 @@ export default [
 	},
 	{
 		id: 5,
-		label: 'UX, UI',
+		label: 'Webdesign, UX, UI',
 		img: '/Portfolio/images/thumbnail_rdrgz.webp',
 		imgAlt: 'Mockup of the contact-landingpage on a laptop-screen',
 		title: 'Contact Page',
-		category: ['UX', 'UI'],
+		category: ['Webdesign', 'UX', 'UI'],
 		url: 'https://rdrgz.com/',
 		target: '_blank',
 		iconPath:

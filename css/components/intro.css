@@ -8,23 +8,16 @@
 	.intro__color--red {
 		display: flex;
 		flex-direction: column;
-		background-color: var(--tertiary-light);
-		border-radius: var(--space-xs);
+
 		grid-column: 4/7;
 		color: var(--text-color__dark);
-		padding: var(--space-l);
+
 		gap: var(--space-xs);
 	}
 
 	.intro__border--red {
-		border: 2px solid var(--tertiary);
-		border-radius: var(--space-xs);
 		grid-column: 1/4;
 		margin: 0;
-		padding: var(--space-l);
-		h3 {
-			color: var(--tertiary-contrast);
-		}
 	}
 
 	h2 {

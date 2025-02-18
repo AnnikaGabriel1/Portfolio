@@ -40,15 +40,27 @@ input[type='range']::-webkit-slider-thumb {
 	border-radius: var(--space-xs);
 }
 
+input[type='range']::-webkit-slider-thumb:hover,
+input[type='range']::-webkit-slider-thumb:focus,
+input[type='range']::-webkit-slider-thumb:focus-visible {
+	border: 2px solid var(--off-black);
+}
+
 /******** Firefox ********/
 input[type='range']::-moz-range-track {
 	background: var(--off-black);
 	height: 2px;
 }
 input[type='range']::-moz-range-thumb {
-	border: none; /*Removes extra border that FF applies*/
+	border: none; /* Entfernt extra Border in Firefox */
 	border-radius: var(--space-xs);
 	background-color: var(--primary);
 	height: 16px;
 	width: 16px;
+}
+
+/* Hover-Effekt für den gesamten Slider */
+input[type='range']:hover::-moz-range-thumb,
+input[type='range']:focus::-moz-range-thumb {
+	border: 2px solid var(--off-black);
 }

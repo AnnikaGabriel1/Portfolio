@@ -4,8 +4,8 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 	return (
 		<div className="contact">
 			<div className="contact__intro">
-				<h1>Contact</h1>
 				<div className="contact__text">
+					<h1>Contact</h1>
 					<h2>Let&apos;s get in touch!</h2>
 					<p>
 						I’m always excited to connect! Whether you have a project in mind,
@@ -13,7 +13,10 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 						on social media.
 					</p>
 				</div>
-				<div className="contact__socials-container">
+			</div>
+
+			<div className="contact__links">
+				<div className="contact__content">
 					<h4>Connect on social media</h4>
 					<div className="contact__socials">
 						<a
@@ -54,9 +57,6 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 						</a>
 					</div>
 				</div>
-			</div>
-
-			<div>
 				<div className="contact__content">
 					<h4>Send me an e-mail</h4>
 					<a
@@ -69,15 +69,16 @@ export default function Contact({ iconPath, altText, iconClassName }) {
 						</button>
 					</a>
 				</div>
-				<div className="imprint">
-					<a
-						href="https://annikagabriel1.github.io/Portfolio/imprint"
-						target="_blank"
-						aria-label="Click to open Imprint"
-					>
-						Imprint
-					</a>
-				</div>
+			</div>
+			<div className="imprint">
+				<h5>© 2025 Annika Gabriel - All Rights Reserved</h5>
+				<a
+					href="https://annikagabriel1.github.io/Portfolio/imprint"
+					target="_blank"
+					aria-label="Click to open Imprint"
+				>
+					Imprint
+				</a>
 			</div>
 		</div>
 	);

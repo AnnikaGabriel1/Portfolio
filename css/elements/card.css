@@ -13,7 +13,6 @@
 	img {
 		width: 100%;
 		aspect-ratio: 16/9;
-		border-radius: var(--space-xs);
 		margin-bottom: var(--space-m);
 	}
 }
@@ -30,9 +29,7 @@
 
 .card__color--red {
 	border-radius: var(--space-xs);
-	color: var(--text-color__dark);
-	background-color: var(--tertiary-light);
-	padding: var(--space-l);
+
 	h4 {
 		margin: 0 0 var(--space-s) 0;
 	}
@@ -42,10 +39,7 @@
 	color: var(--off-black);
 	border: 2px solid var(--tertiary);
 	padding: var(--space-l);
-	border-radius: var(--space-xs);
-	h4 {
-		color: var(--tertiary-contrast);
-	}
+
 	p {
 		margin-top: var(--space-s);
 	}
@@ -70,13 +64,6 @@
 	color: var(--off-black);
 	h4 {
 		margin: 0 0 var(--space-s) 0;
-	}
-
-	.icon-button {
-		color: var(--quaternary-contrast) !important;
-	}
-	h4 {
-		color: var(--quaternary-contrast);
 	}
 }
 

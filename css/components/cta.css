@@ -15,46 +15,35 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	border: solid 2px var(--quaternary);
+	border: solid 2px var(--off-black);
 	align-items: center;
-	color: var(--quaternary-contrast);
+
 	gap: var(--space-s);
-	border-radius: var(--space-xs);
+
 	padding: var(--space-l);
-	button {
-		background-color: var(--quaternary-light);
-	}
 }
 
 .cta__text--red {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	border: solid 2px var(--tertiary);
+	border: solid 2px var(--off-black);
 	align-items: center;
-	color: var(--tertiary-contrast);
+
 	gap: var(--space-s);
-	border-radius: var(--space-xs);
+
 	padding: var(--space-l);
-	button {
-		background-color: var(--tertiary-light);
-	}
 }
 
 .cta__text--green {
-	border: solid 2px var(--secondary);
+	border: solid 2px var(--off-black);
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-radius: var(--space-xs);
 	padding: var(--space-l);
 	gap: var(--space-s);
-	color: var(--secondary-contrast);
-	button {
-		background-color: var(--secondary-light);
-		color: var(--off-black);
-	}
+
 	.icon__cta {
 		color: var(--off-black);
 	}

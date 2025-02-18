@@ -21,6 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	gap: var(--space-s);
 	grid-column: 1/7;
 	position: sticky;
 	top: 70px;
@@ -104,16 +105,6 @@
 	flex-direction: column;
 	width: 100%;
 	grid-column: 1/7;
-
-	.big-list__text {
-		padding: var(--space-l);
-		h4 {
-			color: var(--secondary-contrast);
-		}
-	}
-	p {
-		color: var(--text-color__dark);
-	}
 
 	.section__intro {
 		background-color: var(--secondary-light);
